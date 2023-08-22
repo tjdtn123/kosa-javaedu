@@ -1,4 +1,4 @@
-package day4;
+package day5;
 public class TwoArrayTest5 {
 	public static void main(String[] args) {
 		 int[][] emp = new int[5][];
