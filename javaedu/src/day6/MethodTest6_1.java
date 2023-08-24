@@ -23,7 +23,7 @@ public class MethodTest6_1 {
 			sum += p[i];
 		return sum;
 	}*/
-	static int add(int... p) {   // Java 5 부터 가변아규먼트 구문 추가
+	static int add(int... p) {   // Java 5 부터 가변아규먼트 구문 추가, 반드시 마지막 아규먼트로 사용해야함, 배열로 전달됨
 		int sum = 0;
 		for(int i=0; i < p.length; i++)
 			sum += p[i];
