@@ -1,4 +1,4 @@
-package day6;
+package day7;
 
 public class CardTest2{
 	public static void main(String args[]) throws Exception{	

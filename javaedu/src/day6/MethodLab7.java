@@ -7,7 +7,7 @@ public class MethodLab7 {
 		printArray(powerArray(3));
 		printArray(powerArray(4));		
 	}
-	static int[] powerArray(int num) {
+	 static int[] powerArray(int num) {
 		int [] ary = new int[10];
 		for(int i=1; i<=10; i++) {
 			ary[i-1]=i;
@@ -18,7 +18,7 @@ public class MethodLab7 {
 		}		
 		return ary;
 	}	
-	static void printArray(int[] ary) {
+	public static void printArray(int[] ary) {
 		for(int elem : ary){
 			System.out.printf("%d%s",elem,(elem==ary[ary.length-1])?"\n":",");
 		}
