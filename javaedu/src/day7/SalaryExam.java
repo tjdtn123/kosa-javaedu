@@ -12,16 +12,15 @@ class SalaryExpr{
 		this.bonus = bonus;
 	}
 	int getSalary(int grade){
-		switch(grade) {
-			case 1 : bonus += 100;
-				break;
-			case 2 : bonus += 90;
-				break;
-			case 3 : bonus += 80;
-				break;
-			default : bonus += 70;
-		}		
-		return bonus;
+		if(grade == 1) {
+			return bonus + 100;
+		}else if(grade == 2) {
+			return bonus + 90;
+		}else if(grade == 3) {
+			return bonus + 80;
+		}else
+			return bonus + 70;
+		
 	}
 }
 public class SalaryExam {
@@ -31,10 +30,7 @@ public class SalaryExam {
 		int month = sc.nextInt();
 		int grade = sc.nextInt();
 		SalaryExpr sal = new SalaryExpr(100);
-		if(month % 2 == 0) {
-			sal.getSalary(grade);
-		}
-		System.out.printf("%d월 %d 등급의 월급은 %d입니다.\n",month,grade,sal.bonus);				
+		System.out.printf("%d월 %d 등급의 월급은 %d입니다.\n",month,grade,(month % 2 == 0)?sal.getSalary(grade):sal.bonus);					
 		sc.close();
 	}
 }

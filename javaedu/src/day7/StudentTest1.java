@@ -13,7 +13,7 @@ class Student{
 	}
 }
 
-public class StudentTest {
+public class StudentTest1 {
 	public static void main(String[] args) {
 		Student st1 = new Student();
 		System.out.println(st1);
