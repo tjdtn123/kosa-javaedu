@@ -8,6 +8,13 @@ class Value {
 	Value(int value) {
 		this.value = value;
 	}
+	public boolean equals(Object obj) {
+		boolean result = false;
+		if(obj != null && obj instanceof Value)
+			if(value == ((Value)obj).value)
+				result = true;
+		return result;
+	}
 }
 
 public class EqualsTest3 {

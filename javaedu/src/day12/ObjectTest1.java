@@ -22,7 +22,7 @@ public class ObjectTest1 {
 		Member1 obj1 = new Member1(10, "자바", "duke");
 		Member1 obj2 = new Member1(10, "자바", "duke");
 
-		System.out.println(obj1.equals(obj2));
+		System.out.println(obj1.equals(obj2)); //Object 클래스의 equals는 등가 연산이다. equals를 overwriting 해야한다.
 		System.out.println(obj1 == obj2);
 
 		Member1 obj3 = obj2;
