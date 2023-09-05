@@ -23,6 +23,7 @@ public class FileWriterTest3 {
 			int dateNum = ld.getDayOfMonth();
 			DayOfWeek day = ld.getDayOfWeek();
 			String korday = day.getDisplayName(TextStyle.FULL, Locale.KOREAN);
+			
 
 			out.printf("오늘은 %d년 %d월 %d일입니다.\r\n", yearNum, monthNum, dateNum);
 			out.printf("오늘은 %s입니다.\r\n", korday);

@@ -18,14 +18,8 @@ public class ProductTest {
 			else
 				System.out.println("동일한 ID의 제품이 이미 저장되어있습니다.");				
 		}
-		printProduct(product);
-	}
-	public static void printProduct(HashSet<Product> product) {
 		System.out.println("제품ID      제품명      가격");
 		System.out.println("----------------------------");
-		for(Product elem : product) {
-			System.out.printf("%-8s  %-8s  %-8s\n",elem.getProductID(),elem.getProductName(),elem.getProductPrice());
-		}
+		Product.printProduct(product);
 	}
-
 }

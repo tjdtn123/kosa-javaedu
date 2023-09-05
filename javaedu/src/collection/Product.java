@@ -1,5 +1,6 @@
 package collection;
 
+import java.util.HashSet;
 import java.util.Objects;
 
 public class Product {
@@ -29,6 +30,11 @@ public class Product {
 		Product other = (Product) obj;
 		return productID == other.productID;
 	}
+	public static void printProduct(HashSet<Product> product) {		
+		for(Product elem : product) {
+			System.out.printf("%-8s  %-8s  %-8s\n",elem.getProductID(),elem.getProductName(),elem.getProductPrice());
+		}
+	}
 	
 	public String getProductID() {
 		return productID;
@@ -40,6 +46,10 @@ public class Product {
 	
 	public String getProductPrice() {
 		return productPrice;
+	}
+	
+	public String toString() {
+		return String.format("%-8s  %-8s  %-8s\n", productID,productName,productPrice);
 	}
 	
 	
