@@ -17,7 +17,7 @@ public class InnerTest4 {
 		System.out.println("Main start !!");
 		InnerTest4 n = new InnerTest4();
 		// 이 이름 없는 Inner 클래스는 Testable 와 Object 의 자손이 된다.
-		n.pr(new Testable() {
+		n.pr(new Testable() { 
 			int su = 100;
 
 			public void output(String s) {
